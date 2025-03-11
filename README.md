@@ -38,7 +38,7 @@ This is a simple TODO application built with Node.js, Express, and MongoDB. It i
 2. Install the dependencies:
 
    ```bash
-   npm install
+   npm install || yarn
    ```
 
 3. Create a `.env` file in the root directory and add your MongoDB connection string:
@@ -50,6 +50,10 @@ This is a simple TODO application built with Node.js, Express, and MongoDB. It i
 
 ### Running the Application
 
+```sh
+We recommend that this project be run via Docker. To do so, Docker must be installed.
+```
+
 To start the server on docker, run:
 
 1. Run compose Build
@@ -60,6 +64,12 @@ To start the server on docker, run:
     ```plaintext
     docker compose up -d
     ```
+
+#### To run outside the Docker environment, make sure you have the latest stable version of Mongo running on your machine and execute the following command at the root of the project:
+
+```bash
+npm run dev || yarn dev
+```
 
 The server will run on the specified port (default is 3000).
 
