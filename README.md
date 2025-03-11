@@ -44,7 +44,7 @@ This is a simple TODO application built with Node.js, Express, and MongoDB. It i
 3. Create a `.env` file in the root directory and add your MongoDB connection string:
 
    ```plaintext
-   DB_URI=mongodb://your_mongo_db_uri
+   DB_URI=mongodb://your_mongo_db_uri/todo-app
    PORT=3000
    ```
 
