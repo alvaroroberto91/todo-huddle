@@ -2,7 +2,12 @@ import mongoose, { Document, Schema } from 'mongoose';
 
 interface ITodo extends Document {
   title: string;
+  description: string;
   completed: boolean;
+  priority: 'low' | 'medium' | 'high';
+  dueDate: Date;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 const todoSchema: Schema = new Schema(
@@ -12,8 +17,6 @@ const todoSchema: Schema = new Schema(
     completed: { type: Boolean, default: false },
     priority: { type: String, enum: ['low', 'medium', 'high'], required: true },
     dueDate: { type: Date, required: true },
-    createdAt: { type: Date, default: Date.now },
-    updatedAt: { type: Date, default: Date.now },
   },
   { timestamps: true }
 );
