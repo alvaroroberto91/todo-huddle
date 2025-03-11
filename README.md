@@ -31,7 +31,7 @@ This is a simple TODO application built with Node.js, Express, and MongoDB. It i
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/todo-app.git
+   git clone git@github.com:alvaroroberto91/todo-huddle.git
    cd todo-app
    ```
 
